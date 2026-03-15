@@ -1,1 +1,12 @@
+# Práticas
+
+O que é SQL e bancos de dados relacionais:
+
+SQL (Structured Query Language) é a linguagem padrão para gerenciar e manipular bancos de dados relacionais, permitindo consultas, inserções, atualizações e exclusões de dados estruturados em tabelas de linhas e colunas. Bancos de dados relacionados (relacionais) organizam informações em tabelas conectadas por chaves, garantindo integridade e consistência (ACID).
+
+Instalação do MySQL Workbench e Xammp.
+
+Conectando ao banco de dados Kaggle Brazilian E‑Commerce Public Dataset by Olist.
+
+Primeiro SELECT.
 
