@@ -3,16 +3,16 @@ O cronograma do grupo foi estruturado em 12 semanas de estudo, combinando teoria
 
 Cada semana aborda um conjunto de conceitos fundamentais de SQL e exercícios aplicados para fixação do conteúdo.
 
-Semana 1 – Introdução e Ambiente
+## Semana 1 – Introdução e Ambiente
 
-O que estudar:
+#### O que estudar:
 
 - O que é SQL e bancos de dados relacionais
 - Instalação do PostgreSQL e DBeaver (Ou qualquer ambiente de SQL)
 - Conectando ao banco
 - Primeiro SELECT
   
-Prática:
+#### Prática:
 
 - Instalar os softwares
 - Baixar o banco de dados do Kaggle Brazilian E‑Commerce Public Dataset by Olist
@@ -20,16 +20,16 @@ Prática:
 - Explorar as tabelas do banco para entender as colunas e os dados disponíveis
 
 
-Semana 2 – Consultas Básicas e Filtragem
+## Semana 2 – Consultas Básicas e Filtragem
 
-O que estudar:
+#### O que estudar:
 
 - SELECT, FROM, AS (alias)
 - WHERE com operadores (=, <>, >, <, >=, <=)
 - AND, OR, NOT
 - LIKE, IN, BETWEEN
   
-Prática:
+#### Prática:
 
 - Utilizando o banco de dados Brazilian E‑Commerce Public Dataset by Olist
 - Filtrar clientes por estado
@@ -37,15 +37,15 @@ Prática:
 - Filtrar pedidos entre dois valores ou datas
 - Encontrar padrões em nomes de cidades ou categorias
   
-Semana 3 – Ordenação, Limites e Valores Nulos
+## Semana 3 – Ordenação, Limites e Valores Nulos
 
-O que estudar:
+#### O que estudar:
 
 - ORDER BY (ASC/DESC)
 - LIMIT / OFFSET
 - Tratamento de nulos (IS NULL, IS NOT NULL, COALESCE)
   
-Prática:
+#### Prática:
 
 - Utilizando o banco de dados Brazilian E‑Commerce Public Dataset by Olist
 - Ordenar pedidos do mais recente para o mais antigo
@@ -54,16 +54,16 @@ Prática:
 - Identificar colunas que possuem valores nulos
 - Substituir valores nulos por valores padrão
   
-Semana 4 – Funções de String, Data e Matemática
+## Semana 4 – Funções de String, Data e Matemática
 
-O que estudar:
+#### O que estudar:
 
 - UPPER, LOWER, CONCAT, SUBSTR, LENGTH
 - EXTRACT, DATE_PART, cálculo de datas
 - ROUND, ABS, CAST
 - COALESCE e NULLIF
   
-Prática:
+#### Prática:
 
 - Utilizando o banco de dados Brazilian E‑Commerce Public Dataset by Olist
 - Padronizar nomes de cidades ou categorias
@@ -71,16 +71,16 @@ Prática:
 - Calcular diferenças entre datas de pedido e entrega
 - Arredondar valores de pagamento
   
-Semana 5 – Agregação e Agrupamento
+## Semana 5 – Agregação e Agrupamento
 
-O que estudar:
+#### O que estudar:
 
 - COUNT, SUM, AVG, MIN, MAX
 - GROUP BY
 - Diferença entre WHERE e HAVING
 - HAVING
   
-Prática:
+#### Prática:
 
 - Utilizando o banco de dados Brazilian E‑Commerce Public Dataset by Olist
 - Contar quantos pedidos existem no banco
@@ -89,15 +89,15 @@ Prática:
 - Identificar categorias com maior número de produtos
 - Filtrar agrupamentos com base em condições específicas
 
-Semana 6 – Relacionamentos e JOINs (Parte 1)
+## Semana 6 – Relacionamentos e JOINs (Parte 1)
 
-O que estudar:
+#### O que estudar:
 
 - Chave primária e estrangeira (conceito)
 - INNER JOIN
 - LEFT JOIN
   
-Prática:
+#### Prática:
 
 - Utilizando o banco de dados Brazilian E‑Commerce Public Dataset by Olist
 - Relacionar clientes com seus pedidos
@@ -105,15 +105,15 @@ Prática:
 - Identificar pedidos que possuem clientes cadastrados
 - Listar todos os clientes, incluindo aqueles que não possuem pedidos
 
-Semana 7 – JOINs (Parte 2) e Operações de Conjunto
+## Semana 7 – JOINs (Parte 2) e Operações de Conjunto
 
-O que estudar:
+#### O que estudar:
 
 - RIGHT JOIN, FULL JOIN (visão geral)
 - UNION, UNION ALL
 - INTERSECT, EXCEPT
   
-Prática:
+#### Prática:
 
 - Utilizando o banco de dados Brazilian E‑Commerce Public Dataset by Olist
 - Comparar resultados obtidos com diferentes tipos de JOIN
@@ -121,62 +121,62 @@ Prática:
 - Identificar registros presentes em uma tabela e ausentes em outra
 - Encontrar produtos que nunca apareceram em pedidos
 
-Semana 8 – Subconsultas (Subqueries)
+## Semana 8 – Subconsultas (Subqueries)
 
-O que estudar:
+#### O que estudar:
 
 - Subquery no WHERE (IN, EXISTS)
 - Subquery no SELECT
 - Subquery no FROM (tabela derivada)
   
-Prática:
+#### Prática:
 
 - Utilizando o banco de dados Brazilian E-Commerce Public Dataset by Olist
 - Encontrar pedidos com valor acima da média de pagamentos
 - Calcular o total de vendas por produto e a porcentagem de participação de cada produto nas vendas
 - Usar uma subconsulta como tabela temporária para analisar pedidos ou pagamentos
 
-Semana 9 – Manipulação de Dados (DML)
+## Semana 9 – Manipulação de Dados (DML)
 
-O que estudar:
+#### O que estudar:
 
 - INSERT (várias formas)
 - UPDATE
 - DELETE
 - Cuidados com WHERE em DELETE/UPDATE
   
-Prática:
+#### Prática:
 
 - Criar uma tabela de testes baseada em dados do banco Brazilian E-Commerce Public Dataset by Olist
 - Inserir novos registros simulando novos clientes ou pedidos
 - Atualizar informações de registros existentes
 - Remover registros duplicados ou incorretos utilizando consultas com subquery
 
-Semana 10 – Criação e Alteração de Estruturas (DDL)
+## Semana 10 – Criação e Alteração de Estruturas (DDL)
 
-O que estudar:
+#### O que estudar:
 
 - CREATE TABLE (tipos, constraints: NOT NULL, UNIQUE, DEFAULT)
 - ALTER TABLE (ADD, DROP, MODIFY)
 - PRIMARY KEY, FOREIGN KEY
 - DROP TABLE
   
-Prática:
+#### Prática:
 
 - Modelar um sistema inspirado no banco Brazilian E-Commerce Public Dataset by Olist
 - Criar tabelas para clientes, produtos e pedidos
 - Definir chaves primárias e estrangeiras
 - Alterar uma tabela para adicionar novas colunas ou restrições
 
-Semana 11 – Projeto Final (Parte 1)
+## Semana 11 – Projeto Final (Parte 1)
 
-O que estudar:
+#### O que estudar:
 
 - Entender o problema de negócio
 - Exploração do banco de dados
 - Planejamento das consultas
 
-Prática:
+#### Prática:
 
 - Utilizando o banco de dados Brazilian E-Commerce Public Dataset by Olist
 - Explorar as tabelas do banco
@@ -184,15 +184,15 @@ Prática:
 - Definir perguntas de negócio para análise
 - Iniciar consultas SQL para responder essas perguntas
 
-Semana 12 – Projeto Final (Parte 2)
+## Semana 12 – Projeto Final (Parte 2)
 
-O que estudar:
+#### O que estudar:
 
 - Aplicação de todos os conceitos aprendidos
 - Organização e interpretação dos resultados
 - Apresentação de análises
 
-Prática:
+#### Prática:
 
 - Utilizando o banco de dados Brazilian E-Commerce Public Dataset by Olist
 - Finalizar as consultas SQL
