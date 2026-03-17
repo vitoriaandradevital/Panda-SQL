@@ -13,7 +13,7 @@ Cada semana aborda um conjunto de conceitos fundamentais de SQL e exercícios ap
 * Conectando ao banco
 * Primeiro SELECT
 
-#### Prática:
+#### Pratica:
 
 * Instalar os softwares
 * Baixar o banco de dados do Kaggle Brazilian E-Commerce Public Dataset by Olist
@@ -29,7 +29,7 @@ Cada semana aborda um conjunto de conceitos fundamentais de SQL e exercícios ap
 * AND, OR, NOT
 * LIKE, IN, BETWEEN
 
-#### Prática:
+#### Pratica:
 
 * Utilizando o banco de dados Brazilian E-Commerce Public Dataset by Olist
 * Filtrar clientes por estado
@@ -45,7 +45,7 @@ Cada semana aborda um conjunto de conceitos fundamentais de SQL e exercícios ap
 * LIMIT / OFFSET
 * Tratamento de nulos (IS NULL, IS NOT NULL, COALESCE)
 
-#### Prática:
+#### Pratica:
 
 * Utilizando o banco de dados Brazilian E-Commerce Public Dataset by Olist
 * Ordenar pedidos do mais recente para o mais antigo
@@ -63,7 +63,7 @@ Cada semana aborda um conjunto de conceitos fundamentais de SQL e exercícios ap
 * ROUND, ABS, CAST
 * COALESCE e NULLIF
 
-#### Prática:
+#### Pratica:
 
 * Utilizando o banco de dados Brazilian E-Commerce Public Dataset by Olist
 * Padronizar nomes de cidades ou categorias
@@ -80,7 +80,7 @@ Cada semana aborda um conjunto de conceitos fundamentais de SQL e exercícios ap
 * Diferença entre WHERE e HAVING
 * HAVING
 
-#### Prática:
+#### Pratica:
 
 * Utilizando o banco de dados Brazilian E-Commerce Public Dataset by Olist
 * Contar quantos pedidos existem no banco
@@ -97,7 +97,7 @@ Cada semana aborda um conjunto de conceitos fundamentais de SQL e exercícios ap
 * INNER JOIN
 * LEFT JOIN
 
-#### Prática:
+#### Pratica:
 
 * Utilizando o banco de dados Brazilian E-Commerce Public Dataset by Olist
 * Relacionar clientes com seus pedidos
@@ -113,7 +113,7 @@ Cada semana aborda um conjunto de conceitos fundamentais de SQL e exercícios ap
 * UNION, UNION ALL
 * INTERSECT, EXCEPT
 
-#### Prática:
+#### Pratica:
 
 * Utilizando o banco de dados Brazilian E-Commerce Public Dataset by Olist
 * Comparar resultados obtidos com diferentes tipos de JOIN
@@ -129,7 +129,7 @@ Cada semana aborda um conjunto de conceitos fundamentais de SQL e exercícios ap
 * Subquery no SELECT
 * Subquery no FROM (tabela derivada)
 
-#### Prática:
+#### Pratica:
 
 * Utilizando o banco de dados Brazilian E-Commerce Public Dataset by Olist
 * Encontrar pedidos com valor acima da média de pagamentos
@@ -145,7 +145,7 @@ Cada semana aborda um conjunto de conceitos fundamentais de SQL e exercícios ap
 * DELETE
 * Cuidados com WHERE em DELETE/UPDATE
 
-#### Prática:
+#### Pratica:
 
 * Criar uma tabela de testes baseada em dados do banco Brazilian E-Commerce Public Dataset by Olist
 * Inserir novos registros simulando novos clientes ou pedidos
@@ -161,7 +161,7 @@ Cada semana aborda um conjunto de conceitos fundamentais de SQL e exercícios ap
 * PRIMARY KEY, FOREIGN KEY
 * DROP TABLE
 
-#### Prática:
+#### Pratica:
 
 * Modelar um sistema inspirado no banco Brazilian E-Commerce Public Dataset by Olist
 * Criar tabelas para clientes, produtos e pedidos
@@ -176,7 +176,7 @@ Cada semana aborda um conjunto de conceitos fundamentais de SQL e exercícios ap
 * Exploração do banco de dados
 * Planejamento das consultas
 
-#### Prática:
+#### Pratica:
 
 * Utilizando o banco de dados Brazilian E-Commerce Public Dataset by Olist
 * Explorar as tabelas do banco
@@ -192,7 +192,7 @@ Cada semana aborda um conjunto de conceitos fundamentais de SQL e exercícios ap
 * Organização e interpretação dos resultados
 * Apresentação de análises
 
-#### Prática:
+#### Pratica:
 
 * Utilizando o banco de dados Brazilian E-Commerce Public Dataset by Olist
 * Finalizar as consultas SQL
