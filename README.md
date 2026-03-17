@@ -2,8 +2,6 @@
 
 O cronograma do grupo foi estruturado em 12 semanas de estudo, combinando teoria e prática utilizando o dataset Brazilian E-Commerce Public Dataset by Olist.
 
-Cada semana aborda um conjunto de conceitos fundamentais de SQL e exercícios aplicados para fixação do conteúdo.
-
 ## Semana 1 – Introdução e Ambiente
 
 #### O que estudar:
