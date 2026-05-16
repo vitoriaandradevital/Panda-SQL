@@ -47,29 +47,46 @@ Utilizando a tabela clientes.
 Para observar as colunas id do cliente e estado do cliente da tabela clientes:
 
 ```sql
+
 select id_cliente, estado_cliente from clientes;
+
 ```
 
 Mostra todos os estados que são diferentes de SP:
 
 ```sql
+
 select estado_cliente from clientes
 where estado_cliente != 'SP';
+
 ```
+
+<img width="517" height="165" alt="image" src="https://github.com/user-attachments/assets/0c55426a-6366-47f4-8600-3b3341b5af37" />
+
 
 Mostra todos clientes que tem SC como estado:
 
 ```sql
+
 select id_cliente, estado_cliente from clientes 
 where estado_cliente = 'SC';
+
 ```
+
+<img width="510" height="159" alt="image" src="https://github.com/user-attachments/assets/0631c41b-9a92-4762-932c-0a6abbbe19d2" />
+
 
 Mostra todos os clientes que tem o estado começado com a letra S e seguido por qualquer caractere:
 
 ```sql
+
 select id_cliente, estado_cliente from clientes 
 where estado_cliente like 'S%';
+
 ```
+
+<img width="515" height="167" alt="image" src="https://github.com/user-attachments/assets/b4be08c5-1de4-4641-a165-2b7b4095b519" />
+
 
 
 ### Prática 2: Buscar produtos de uma categoria específica
@@ -126,6 +143,7 @@ where nome_categoria_produto = 'perfumaria' or nome_categoria_produto = 'moveis_
 Utilizando a tabela pedidos:
 
 ```sql
+
 select * from pedidos;
 
 /*Seleciona os pedidos com as datas de entrega ao cliente entre o intervalo de 2017/10/04 a 2018/0/04, ou seja, no período de um ano de forma ordenada:*/
@@ -134,12 +152,22 @@ select id_pedido, data_entrega_cliente from pedidos
 where data_entrega_cliente between '2017-10-04' and '2018-10-04'
 order by data_entrega_cliente ASC;
 
+```
+
+<img width="556" height="160" alt="image" src="https://github.com/user-attachments/assets/0354bbd1-c6d3-42ec-98f2-5f477b958283" />
+
+
+```sql
+
 /*Seleciona os pedidos com a data de entrega estimada entre o intervalo de 2027/05/09 a 2019/05/09, ou seja, um período de dois anos de forma ordenada:*/
 
 select id_pedido, data_estimada_entrega from pedidos
 where data_estimada_entrega between '2017-05-09' and '2019-05-09'
 order by data_estimada_entrega asc;
+
 ```
+
+<img width="579" height="169" alt="image" src="https://github.com/user-attachments/assets/1c119263-627b-4bdf-8a3c-59bd0ce1a9f3" />
 
 
 ### Prática 4: Encontrar padrões em nomes de cidades ou categorias
@@ -147,16 +175,28 @@ order by data_estimada_entrega asc;
 Utilizando a tabela geolocalização:
 
 ```sql
+
 select * from geolocalizacao;
 
 /*Seleciona todas as cidades sem repeti-las com o padrão de terminação em ão*/
 select distinct cidade_geolocalizacao from geolocalizacao
 where cidade_geolocalizacao like '%ao';
 
+```
+
+<img width="303" height="160" alt="image" src="https://github.com/user-attachments/assets/524900df-13f4-4d3d-a9e8-567c0fc6917e" />
+
+
+```sql
+
 /*Seleciona todas as cidades sem repeti-las com o padrão de inicio igual são e sem o ter a letra i no nome*/
 select distinct cidade_geolocalizacao from geolocalizacao
 where cidade_geolocalizacao like 'sao%' and cidade_geolocalizacao not like '%i%';
+
 ```
+
+<img width="304" height="167" alt="image" src="https://github.com/user-attachments/assets/65a5f417-7750-475f-8379-1643aefd6fa9" />
+
 
 
 
