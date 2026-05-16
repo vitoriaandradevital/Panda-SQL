@@ -49,9 +49,7 @@ O SELECT é a base de praticamente todas as consultas em SQL e o primeiro passo 
 * Explorar as tabelas do banco para entender as colunas e os dados disponíveis
 
 
-Utilizei o comando Select para explorar as tabelas do Conjunto de dados públicos de comércio eletrônico brasileiro da Olist
-
-
+```sql
 
 select * from clientes;  
 
@@ -73,13 +71,19 @@ select * from traducao_categoria_produto;
 
 select * from vendedores;
 
+```
+
+Utilizei o comando Select para visualizar as tabelas do Conjunto de dados públicos de comércio eletrônico brasileiro da Olist:
+
+<img width="1224" height="157" alt="image" src="https://github.com/user-attachments/assets/b6c00985-4ed3-4f63-8506-053f2839c3c4" />
+
+
 Nessa etapa, foram registradas as alterações realizadas nos nomes e tipos de dados das colunas das tabelas do banco de dados.
 Essas modificações foram feitas manualmente, ao invés da utilização do comando AS, pois as colunas originalmente estavam nomeadas em inglês e,
 por questão de praticidade, optou-se por realizar a tradução diretamente na estrutura do banco no início do processo.
 
 Dessa forma, foi utilizado o DDL (Data Definition Language) gerado automaticamente pela ferramenta para a criação das tabelas, 
 sendo posteriormente ajustado manualmente para refletir as alterações necessárias. Abaixo estão apresentadas as estruturas das tabelas do banco de dados:
-
 
 
 ```sql 
@@ -152,3 +156,5 @@ CREATE TABLE public.traducao_categoria_produto (
 	nome_categoria_produto varchar(50) NULL,
 	categoria_produto_ingles varchar(50) NULL
 );
+
+```
