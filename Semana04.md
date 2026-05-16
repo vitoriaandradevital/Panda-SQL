@@ -42,7 +42,9 @@ Inicialmente, foi feita a consulta simples com SELECT para visualizar os valores
 Essa etapa é importante para entender como os dados estão armazenados antes de qualquer modificação.
 
 ```sql
+
 select nome_categoria_produto from produtos;
+
 ```
 Em seguida, foi utilizada uma expressão para padronizar os textos no formato:
 
@@ -50,11 +52,13 @@ Em seguida, foi utilizada uma expressão para padronizar os textos no formato:
 * Restante das letras minúsculas
 
 ```sql
+
 select
     upper(substr(nome_categoria_produto, 1, 1)) ||
     lower(substr(nome_categoria_produto, 2, length(nome_categoria_produto))) 
     as categoria_padronizada
 from produtos;
+
 ```
 
 Após validar o resultado com SELECT, foi aplicado um UPDATE para salvar a padronização diretamente no banco:
@@ -63,11 +67,13 @@ Após validar o resultado com SELECT, foi aplicado um UPDATE para salvar a padro
 * WHERE ... IS NOT NULL → garante que apenas valores existentes sejam atualizados, evitando erros com valores nulos
 
 ```sql
+
 update produtos
 set nome_categoria_produto = 
     upper(substr(nome_categoria_produto, 1, 1)) ||
     lower(substr(nome_categoria_produto, 2, length(nome_categoria_produto)))
 where nome_categoria_produto IS NOT NULL;
+
 ```
 
 A mesma lógica foi aplicada em diferentes colunas do banco de dados, como:
@@ -78,6 +84,7 @@ A mesma lógica foi aplicada em diferentes colunas do banco de dados, como:
 * cidade_vendedor (tabela vendedores)
 
 ```sql
+
 select
     upper(substr(cidade_cliente, 1, 1)) ||
     lower(substr(cidade_cliente , 2, length(cidade_cliente ))) 
@@ -133,6 +140,7 @@ set cidade_vendedor =
     upper(substr(cidade_vendedor, 1, 1)) ||
     lower(substr(cidade_vendedor, 2, length(cidade_vendedor)))
 where cidade_vendedor IS NOT NULL;
+
 ```
 Essa etapa de padronização é fundamental em processos de análise de dados, pois:
 
@@ -153,7 +161,9 @@ Primeiramente, foi feita uma consulta simples para visualizar os valores da colu
 Essa etapa permite entender o formato dos dados armazenados (timestamp) antes de realizar transformações.
 
 ```sql
+
 select data_hora_compra from pedidos;
+
 ```
 Em seguida, foi utilizado o comando EXTRACT para obter apenas o ano da data.
 Essa consulta permite identificar em qual ano cada pedido foi realizado.
@@ -191,6 +201,7 @@ select
 from pedidos
 group by ano
 order by ano;
+
 ```
 
 * date_part tem a mesma função que extract,
@@ -213,7 +224,11 @@ select
 from pedidos
 group by mes
 order by total_compras DESC;
+
 ```
+
+<img width="356" height="157" alt="image" src="https://github.com/user-attachments/assets/c3211238-c5c0-4074-8e2e-afbc0d52c7e9" />
+
 Com isso, podemos observar que a maior quantidade de compras feitas ocorre no mês 8 ( Agosto ).
 
 Ademais, é perceptível que o ano com o maior total de compras foi em 2018 e o mês com o maior total de 
@@ -222,6 +237,7 @@ compras foi em agosto.
 Em fim, irei descobrir em qual ano e mês em conjunto tiveram o maior total de compras feitas.
 
 ```sql
+
 select
     cast(extract(year from data_hora_compra) as text) as ano,
     extract (month from data_hora_compra) as mes,
@@ -232,7 +248,11 @@ group by
     extract(month from data_hora_compra)
 order by total_compras desc
 limit 1;
+
 ```
+
+<img width="477" height="90" alt="image" src="https://github.com/user-attachments/assets/ee31e845-319d-4ecd-8191-dadb2085f4ad" />
+
 
 Portando, ocorreu no ano de 2017 no mês 11 (novembro), com o total de compras igual a 7.544,
 
@@ -246,12 +266,14 @@ Nesta etapa, foi realizada uma análise das datas de compra e entrega dos pedido
 com o objetivo de identificar possíveis valores nulos e calcular o tempo de entrega em dias e meses.
 
 ```sql
+
 select data_hora_compra, data_entrega_cliente from pedidos;
 
 select
     sum(case when data_hora_compra is null then 1 else 0 end) as data_hora_compra_nulos,
     sum(case when  data_entrega_cliente is null or data_entrega_cliente = '' then 1 else 0 end) as entrega_cliente_nulos
 from pedidos;
+
 ```
 
 * case when then 1 else 0 end → cria uma contagem condicional
@@ -272,11 +294,13 @@ evitando distorções nos resultados da análise.
 Calcula a diferença entre a data da compra e a data da entrega ao cliente em dias:
 
 ```sql
+
 SELECT 
     id_pedido,data_hora_compra, data_entrega_cliente,
     data_entrega_cliente::date - data_hora_compra::date AS dias_entrega
 FROM pedidos
 WHERE NULLIF(data_entrega_cliente, '') IS NOT NULL;
+
 ```
 * ::date → converte o valor para tipo data
 * A subtração entre datas retorna a diferença em dias
@@ -286,12 +310,14 @@ WHERE NULLIF(data_entrega_cliente, '') IS NOT NULL;
 Calcula a diferença em meses da data da compra e da data de entrega ao cliente:
 
 ```sql
+
 select
     id_pedido,data_hora_compra, data_entrega_cliente,
     extract(year from AGE(data_entrega_cliente::timestamp, data_hora_compra)) * 12 +
     extract(month from AGE(data_entrega_cliente::timestamp, data_hora_compra)) as meses_entrega
 from pedidos
 where NULLIF(data_entrega_cliente, '') is not null;
+
 ```
 
 * AGE(data_entrega, data_compra) → calcula a diferença entre datas
@@ -302,6 +328,7 @@ where NULLIF(data_entrega_cliente, '') is not null;
 Calculando a diferença em dias e meses juntos:
 
 ```sql
+
 select
     id_pedido, data_hora_compra, data_entrega_cliente,
     data_entrega_cliente::date - data_hora_compra::date as dias_entrega,
@@ -309,7 +336,11 @@ select
     extract(month from age(data_entrega_cliente::timestamp, data_hora_compra)) as meses_entrega
 from pedidos
 where nullif(data_entrega_cliente, '') is not null;
+
 ```
+
+<img width="1136" height="163" alt="image" src="https://github.com/user-attachments/assets/469efdb5-8c63-41a2-bfef-a5f778e3a5d1" />
+
 Essa análise permite avaliar a eficiência do processo de entrega, possibilitando:
 
 * Medir o tempo médio de entrega
@@ -331,6 +362,7 @@ select
     valor_pagamento,
     round(valor_pagamento, 1) as valor_arredondado
 from pagamentos_pedidos;
+
 ```
 * round(valor_pagamento, 1) → arredonda o valor para 1 casa decimal
 * id_pedido → permite identificar a qual pedido o valor pertence
