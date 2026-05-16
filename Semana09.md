@@ -56,11 +56,11 @@ VALUES
 
 ```sql
 
-/*Nesse caso, apenas o registro da cliente Maria terá a cidade alterada para Campinas.*/
+/*Nesse caso, apenas o registro da cliente Carla terá a cidade alterada para Campinas.*/
 
 update teste_cliente
 set cidade_teste_cliente = 'Campinas'
-where nome_teste_cliente = 'Maria';
+where nome_teste_cliente = 'Carla';
 
 ```
 
