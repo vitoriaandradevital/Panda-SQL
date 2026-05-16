@@ -148,6 +148,12 @@ select id_cliente, cidade_cliente, estado_cliente
 from clientes
 where estado_cliente = 'RJ';
 
+```
+
+<img width="699" height="161" alt="image" src="https://github.com/user-attachments/assets/01726e9d-d0a4-4db8-91d0-669dd0e84e45" />
+
+
+```sql
 
 /* Une os clientes que são da cidade de Franca e Campinas*/
 
@@ -190,6 +196,8 @@ select id_pedido
 from pagamentos_pedidos;
 
 ```
+
+<img width="326" height="62" alt="image" src="https://github.com/user-attachments/assets/cc5ec9c4-efab-4986-8f36-8875c582c3c9" />
 
 Como resultado, apenas um pedido com id igual a bfbd0f9bdef84302105ad712db648a6c esta presente na tabela pedidos mas
 não esta presente na tabela pagamentos pedidos.
