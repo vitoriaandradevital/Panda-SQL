@@ -63,6 +63,7 @@ Portanto, retorna somente clientes que possuem pedidos.
 Utilizando a tabela pedidos e pagamentos pedidos
 
 ```sql
+
 select 
   pedidos.id_pedido,
   pagamentos_pedidos.pagamente_sequencial,
@@ -72,7 +73,11 @@ select
 from pedidos 
 inner join pagamentos_pedidos
   on pedidos.id_pedido = pagamentos_pedidos.id_pedido;
+
 ```
+
+<img width="1242" height="160" alt="image" src="https://github.com/user-attachments/assets/e5bd2be0-9339-4d18-bf2d-2459662473da" />
+
 
 Mostra apenas pedidos que possuem pagamento registrado.
 
