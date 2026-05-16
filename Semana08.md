@@ -162,8 +162,7 @@ group by itens_pedidos.id_produto ;
 
 ```
 
-
-
+<img width="894" height="161" alt="image" src="https://github.com/user-attachments/assets/4a458357-6d57-4531-b6f2-198fc78960bb" />
 
 
 ### Prática 3: Usar uma subconsulta como tabela temporária para analisar pedidos ou pagamentos
