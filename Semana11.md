@@ -124,7 +124,7 @@ para identificar o produto ou categoria responsável pela maior geração de rec
 marketplace e compreender os fatores associados ao seu desempenho comercial.
 
 A partir da integração e análise das diferentes tabelas do banco de dados, serão investigados
-aspectos relacionados à distribuição geográfica das vendas, ao perfil dos vendedores,
+aspectos relacionados ao perfil dos vendedores,
 ao comportamento dos clientes, às formas de pagamento mais utilizadas, aos indicadores de
 satisfação dos consumidores e aos aspectos logísticos das entregas.
 
@@ -135,7 +135,8 @@ Dessa forma, pretende-se gerar insights capazes de apoiar a tomada de decisões 
 evidenciar fatores que podem influenciar o desempenho de vendas em ambientes de comércio
 eletrônico.
 
-Objetivo principal: o que explica o sucesso do produto que gera mais receita no marketplace?
+Objetivo principal: Quais fatores parecem estar mais associados ao sucesso comercial do produto de maior faturamento?
+
 
 Perguntas:
 
@@ -151,26 +152,15 @@ Perguntas:
 
 6. os vendedores que mais comercializam esse produto possuem avaliações acima da média do marketplace?
 
-7. os clientes que compraram esse produto realizaram apenas uma compra ou efetuaram novas compras posteriormente?
+7. qual é a taxa de recompra dos clientes que adquiriram esse produto?
 
-8. qual é a taxa de recompra dos clientes que adquiriram esse produto?
+8. qual é a forma de pagamento mais utilizada na compra desse produto?
 
-9. qual é a forma de pagamento mais utilizada na compra desse produto?
+9. existe relação entre o prazo de entrega e as avaliações recebidas pelos clientes?
 
-10. qual percentual das vendas desse produto foi realizado por cartão de crédito?
+10. qual é a avaliação média desse produto?
 
-11. considerando as vendas do produto de maior faturamento, qual seria a estimativa de custos com taxas de processamento de pagamentos e qual seu impacto potencial sobre a receita obtida?
-
-12. qual é o prazo médio de entrega desse produto?
-
-13. existe relação entre o prazo de entrega e as avaliações recebidas pelos clientes?
-
-14. qual é a avaliação média desse produto?
-
-15. produtos com maior faturamento tendem a apresentar avaliações melhores?
-
-16. quais fatores parecem estar mais associados ao sucesso comercial do produto de maior faturamento, considerando localização geográfica, perfil dos vendedores, comportamento dos clientes, formas de pagamento, avaliações e desempenho logístico?
-
+11. produtos com maior faturamento tendem a apresentar avaliações melhores?
 
 #### Prática 4: Iniciar consultas SQL para responder essas perguntas
 
@@ -188,6 +178,7 @@ limit 1;
 
 <img width="508" height="68" alt="image" src="https://github.com/user-attachments/assets/2b1c66d8-1ca6-44c0-bc6e-0d17d84021d6" />
 
+A análise permitiu identificar o produto responsável pela maior geração de receita bruta no marketplace (63.885) . Esse resultado evidencia qual item possui maior relevância financeira para a plataforma.
 
 2. a qual categoria pertence o produto que gera a maior receita bruta?
 
@@ -208,7 +199,7 @@ limit 1;
 
 <img width="771" height="69" alt="image" src="https://github.com/user-attachments/assets/75e6f9ff-6622-4a13-a990-6bce04f0b312" />
 
-Logo, é possível observar que o produto que gera maior receita é da categoria beleza/saúde.
+A identificação da categoria do produto de maior faturamento (beleza/saúde) permite compreender quais segmentos apresentam maior potencial de geração de receita. Esse resultado pode auxiliar na identificação de tendências de consumo e oportunidades de mercado.
 
 3. quais estados concentram o maior volume de compras desse produto?
 
@@ -240,4 +231,5 @@ order by receita_gerada desc;
 
 <img width="663" height="569" alt="image" src="https://github.com/user-attachments/assets/df04b29a-5add-4136-8d8b-eecf47e6a43a" />
 
-Por fim, São Paulo é o estado com a maior quantidade de compras do produto, com uma receita total de 8.185, sendo possível observar que Ceará e Minas Gerais estão próximos.
+A distribuição geográfica das compras permite identificar os principais mercados consumidores do produto analisado. Conhecer o estado com maior volume de vendas (São Paulo ) auxilia no direcionamento de estratégias comerciais e na compreensão da demanda regional.
+
