@@ -9,7 +9,7 @@ comunidade.
 Neste repositório estão disponíveis os conteúdos utilizados durante o minicurso, incluindo explicações dos conceitos fundamentais, exemplos de consultas SQL,
 exercícios práticos e desafios desenvolvidos para auxiliar no aprendizado e na aplicação dos conhecimentos em bancos de dados.
 
-O minicurso presencial foi desenvolvido pelos membros **Caio Miyaji Ishii, Fagner Santos de Oliveira, Lucas Battisti, Lucas Sufredini, Pedro Kuiava, Rennan Siqueira, Thamara Gabriella Crispim, Vinicius Yuya Massuda e Vitória Vital**, com o objetivo de apresentar os fundamentos da linguagem por meio de uma abordagem prática.
+O minicurso presencial foi desenvolvido pelos membros **Caio Miyaji Ishii, Fagner Santos de Oliveira, Lucas Sufredini, Pedro Kuiava, Rennan Siqueira, Thamara Gabriella Crispim, Vinicius Yuya Massuda e Vitória Vital**, com o objetivo de apresentar os fundamentos da linguagem por meio de uma abordagem prática.
 
 Ao longo das atividades, os participantes aprendem a construir consultas em bancos de dados relacionais, adquirindo a base necessária para avançar em tópicos
 mais complexos.
