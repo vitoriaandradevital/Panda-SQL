@@ -9,8 +9,7 @@ comunidade.
 Neste repositório estão disponíveis os conteúdos utilizados durante o minicurso, incluindo explicações dos conceitos fundamentais, exemplos de consultas SQL,
 exercícios práticos e desafios desenvolvidos para auxiliar no aprendizado e na aplicação dos conhecimentos em bancos de dados.
 
-O minicurso presencial foi desenvolvido pelos membros **Thamara Crispim, Rennan Siqueira, Pedro Kuiava, Caio, Lucas, Lucas Battisti, Vinicius, Vitória e [nome do membro]**,
-com o objetivo de apresentar os fundamentos da linguagem por meio de uma abordagem prática.
+O minicurso presencial foi desenvolvido pelos membros **Caio Miyaji Ishii, Fagner Santos de Oliveira, Lucas Battisti, Lucas Sufredini, Pedro Kuiava, Rennan Siqueira, Thamara Gabriella Crispim, Vinicius Yuya Massuda e Vitória Vital**, com o objetivo de apresentar os fundamentos da linguagem por meio de uma abordagem prática.
 
 Ao longo das atividades, os participantes aprendem a construir consultas em bancos de dados relacionais, adquirindo a base necessária para avançar em tópicos
 mais complexos.
@@ -101,7 +100,7 @@ previamente construídos e alinhados com a proposta de ensino de SQL.
 Como complemento aos estudos, foi desenvolvida uma **plataforma web interativa de desafios SQL** feita p, criada em **Python** utilizando **Streamlit** e
 disponibilizada por meio do **Streamlit Community Cloud**, a partir de um repositório no **GitHub**. 
 
-A implementação da plataforma e o desenvolvimento técnico do projeto foram realizados pelos membros Lucas Battisti (@lucas-battisti) e Thamara Crispim (@thamara-crispim)
+A implementação da plataforma e o desenvolvimento técnico do projeto foram realizados pelos membros [Thamara Crispim](https://github.com/usuario), [Rennan Siqueira](https://github.com/usuario), [Pedro Kuiava](https://github.com/usuario) e [Vitória Vital](https://github.com/vitoriaandradevital).
 
 A plataforma foi projetada para tornar o aprendizado mais intuitivo e dinâmico, permitindo que os participantes escrevam e executem consultas SQL
 diretamente pelo navegador, sem a necessidade de configurações complexas. Por meio de uma interface simples e organizada, o usuário pode resolver desafios,
@@ -116,9 +115,9 @@ exercícios práticos e uma ferramenta interativa para consolidar o aprendizado 
 
 Os materiais, códigos e recursos utilizados no desenvolvimento do minicurso estão disponíveis nos seguintes links:
 
-* **Repositório do projeto:** [GitHub - desafios-sql](https://github.com/pandaufscar/desafios-sql)
+* **Repositório do grupo de estudos SQL:** [Acessar repositório](https://github.com/pandaufscar/panda-sql-study-group-2026/tree/main)
 
-* **Plataforma interativa de desafios SQL:** [Acessar plataforma](https://desafios-sql.streamlit.app/) 
+* **Plataforma interativa de desafios SQL:** [Acessar plataforma](https://panda-minicurso-sql-2026-oci6s4ze262rtimukpi6ex.streamlit.app/)
 
 
 ## Tecnologias utilizadas
