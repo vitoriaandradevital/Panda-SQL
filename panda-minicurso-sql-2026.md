@@ -100,7 +100,7 @@ previamente construídos e alinhados com a proposta de ensino de SQL.
 Como complemento aos estudos, foi desenvolvida uma **plataforma web interativa de desafios SQL** feita p, criada em **Python** utilizando **Streamlit** e
 disponibilizada por meio do **Streamlit Community Cloud**, a partir de um repositório no **GitHub**. 
 
-A implementação da plataforma e o desenvolvimento técnico do projeto foram realizados pelos membros [Thamara Crispim](https://github.com/usuario), [Rennan Siqueira](https://github.com/usuario), [Pedro Kuiava](https://github.com/usuario) e [Vitória Vital](https://github.com/vitoriaandradevital).
+A implementação da plataforma e o desenvolvimento técnico do projeto foram realizados pelos membros [Thamara Crispim](https://github.com/ThamaraCrispim), [Rennan Siqueira](https://github.com/usuario), [Pedro Kuiava](https://github.com/usuario) e [Vitória Vital](https://github.com/vitoriaandradevital).
 
 A plataforma foi projetada para tornar o aprendizado mais intuitivo e dinâmico, permitindo que os participantes escrevam e executem consultas SQL
 diretamente pelo navegador, sem a necessidade de configurações complexas. Por meio de uma interface simples e organizada, o usuário pode resolver desafios,
